@@ -1,3 +1,7 @@
+/*
+ESTILOS INDEX
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +19,15 @@ body {
 }
 
 a {
-    color: white;
     text-decoration: none;
+}
+
+.nav-index{
+    color: white;
+}
+
+.nav-options{
+    color: rgb(48, 66, 84);
 }
 
 *::-webkit-scrollbar {
@@ -38,7 +49,9 @@ a {
 
 .h1 {
     font-size: 85px;
+    animation:  opacityAnim .5s ease-out;
 }
+
 
 .h1-2 {
     font-size: 120px;
@@ -50,6 +63,7 @@ a {
 
 .rotated-title-size {
     font-size: 160px;
+    animation: opacityAnim 1.5s ease-out;
 }
 
 .nav-bar {
@@ -62,11 +76,16 @@ a {
     display: flex;
     align-items: center;
     background-color: black;
-    border-bottom: .5px solid #6d6d6d;
+
 }
 
 .container-options {
     margin-left: auto;
+}
+
+.container-landing {
+    margin: 0;
+    max-width: 1920px;
 }
 
 .nav-bar ul {
@@ -137,15 +156,22 @@ a {
     width: 100%;
     height: 100%;
     object-fit: contain;
-
     margin-top: -190px;
+    animation: translateAnim 1s;
 }
 
 .about-col-img h1 {
     transform: rotate(90deg);
     position: relative;
     top: 240px;
-    left: -250px;
+    left: -270px;
+}
+
+.about-col-img div{
+    position: absolute;
+    overflow: hidden;
+    width: 600px;
+    height: 1000px;
 }
 
 .about-col-text {
@@ -193,14 +219,17 @@ a {
 
 .col-services {
     display: grid;
-    grid-template-columns: repeat(4, 320px);
+    grid-template-columns: repeat(5, 250px);
     gap: 25px;
     margin-bottom: 80px;
 }
 
 .service {
+    position: relative;
     width: 100%;
     height: 480px;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .bg-container {
@@ -208,15 +237,27 @@ a {
     background-repeat: no-repeat; 
     background-position: center;
 
-    padding: 15px;
+    padding: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    font-size: 35px;
+    font-size: 28px;
     text-shadow: 1px 1px 15px black;
+}
+
+.proximamente {
+    bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #bbbbbb;
 }
 
 .content-container {
@@ -315,12 +356,70 @@ a {
     color: #192362;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1400px) {
     .container-services {
-        width: 90%;
+        width: 100%;
     }
 
     .col-services {
-        grid-template-columns: repeat(2, 320px);
+        grid-template-columns: repeat(3, 320px);
+        justify-content: center;
     }
+}
+
+@media(max-width: 1050px ){
+    .col-services {
+        grid-template-columns: repeat(2, 320px);
+        justify-content: center;
+    }
+}
+
+@media(max-width: 700px ){
+    .col-services{
+        grid-template-columns: repeat(1, 320px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1050px) {
+    .head-landing {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .head-landing {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+/*
+main Animations
+*/
+ @keyframes opacityAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateAnim {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*
+ESTILOS SOCIAL MEDIA
+*/
+
+.social-media {
+    background-color: 
+    #93a8fe;
 }

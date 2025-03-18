@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Camaleon Studio</title>
+    <title>Camaleon agency</title>
 </head>
+
 <body>
     <nav class="nav-bar">
         <div class="container-options">
             <ul>
-                <li><a href="javascript:scrollToSection('home')"   >Home</a></li>
-                <li><a href="javascript:scrollToSection('about')"  >About</a></li>
-                <li><a href="javascript:scrollToSection('work')"   >Work</a></li>
-                <li><a href="javascript:scrollToSection('content')">Content</a></li>
+                <li><a class="nav-index" href="javascript:scrollToSection('home')">INCIO</a></li>
+                <li><a class="nav-index" href="javascript:scrollToSection('about')">NOSOTROS</a></li>
+                <li><a class="nav-index" href="javascript:scrollToSection('work')">QUÉ OFRECEMOS?</a></li>
+                <li><a class="nav-index" href="javascript:scrollToSection('services')">SERVICIOS</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container-landing" style="margin-top: 50px;">
         <section id="home" class="section home-container">
-            <div class="head-landing">
-                <img src="assets/logo.png" alt="">
-                <h1 class="h1">CAMALEÓN<br>STUDIO</h1>
-            </div>
-            <div>
-                <img src="assets/video-principal.gif" style="height: 570px; object-fit: cover;" alt="">
-            </div>
+                <div class="head-landing">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="h1">CAMALEON<br>AGENCY</h1>
+                </div>
+                <div>
+                    <img src="assets/video-principal.gif" style="height: 570px; object-fit: cover;" alt="">
+                </div>
         </section>
         <section id="about" class="section about-container">
             <div class="about-col-img">
+                <div>
+                    <img src="assets/about.png" alt="">
+                </div>
                 <h1 class="rotated-title-size">ABOUT</h1>
-                <img src="assets/about.png" alt="">
             </div>
             <div class="about-col-text">
-                <p class="text-1">Somos un estudio de diseño enfocados en la creación de identidades de marcas, branding, diseños publicitarios, redes sociales, etc.</p>
-                <p class="text-1">Nos enfocamos dar una mejor estructura y diseño a tu marca siempre cuidando su ecencia.</p>
+                <p class="text-1">Somos una agencia de diseño enfocados en la creación de identidades de marcas,
+                    branding, diseños publicitarios, redes sociales, etc. </p>
+                <p class="text-1">Nos enfocamos dar una mejor estructura y diseño a tu marca siempre cuidando su
+                    esencia.</p>
             </div>
         </section>
         <section id="work" class="section work-container">
             <div class="work-col-text">
-                <p class="text-1">Ofrecemos servicios de creación y mantenimiento de marca para asegurarnos de que siga siendo relevante y vibrante en un mundo en constante evolución.</p>
+                <p class="text-1">Ofrecemos servicios de creación y mantenimiento de marca para asegurarnos de que siga
+                    siendo relevante y vibrante en un mundo en constante evolución.</p>
                 <p class="text-1">¡Protege y fortalece tu identidad de marca con nuestro apoyo constante!</p>
             </div>
             <div class="work-col-img">
@@ -56,10 +63,36 @@
             <div class="container-services">
                 <h1 class="h1-2">SERVICIOS</h1>
                 <div class="col-services">
-                    <div class="service bg-container" style="background-image: url('assets/4.png');"><h3><a href="https://mahalovibes.my.canva.site/dagen1b41gc">SOCIAL MEDIA</a></h3></div>
-                    <div class="service bg-container" style="background-image: url('assets/5.png');"><h3><a href="#">CREACIÓN DE MARCA DESDE CERO</a></h3></div>
-                    <div class="service bg-container" style="background-image: url('assets/6.png');"><h3><a href="#">BRANDING REBRANDING</a></h3></div>
-                    <div class="service bg-container" style="background-image: url('assets/7.png');"><h3><a href="#">MERCH PACKAGING</a></h3></div>
+                    <div class="service bg-container" style="background-image: url('assets/4.png');"
+                        onclick="window.location.href='socialMedia.html';">
+                        <h3>
+                            <p>SOCIAL MEDIA</p>
+                        </h3>
+                    </div>
+                    <div class="service bg-container" style="background-image: url('assets/5.png');"
+                        onclick="window.location.href='creacionMarca.html'">
+                        <h3>
+                            <p>CREACIÓN DE MARCA DESDE CERO</p>
+                        </h3>
+                    </div>
+                    <div class="service bg-container" style="background-image: url('assets/6.png');"
+                        onclick="window.location.href='creacionIdentidad.html'">
+                        <h3>
+                            <p>CREACION DE IDENTIDAD VISUAL</p>
+                        </h3>
+                    </div>
+                    <div class="service bg-container" style="background-image: url('assets/4.png');"
+                        onclick="window.location.href='creacionWeb.html'">
+                        <h3>
+                            <p>DISEÑO Y CREACION DE PAGINA WEB</p>
+                        </h3>
+                    </div>
+                    <div class="service bg-container" style="background-image: url('assets/7.png');">
+                        <h3>
+                            <p>MERCH PACKAGING DISEÑO PUBLICITARIO</p>
+                            <div class="proximamente">PRÓXIMAMENTE</div>
+                        </h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,11 +109,14 @@
                     </div>
                     <div class="text-info">
                         <h4>CREATIVIDAD E INNOVACIÓN</h4>
-                        <p>Nuestra capacidad para generar ideas frescas y originales que capturan la atención del público y diferencian a las marcas en un mercado competitivo.</p>
+                        <p>Nuestra capacidad para generar ideas frescas y originales que capturan la atención del
+                            público y diferencian a las marcas en un mercado competitivo.</p>
                         <h4>ADAPTABILIDAD Y FLEXIBILIDAD</h4>
-                        <p>Contamos con la capacidad para adaptarnos rápidamente a las tendencias emergentes del mercado digital y ajustar las estrategias para aprovechar nuevas oportunidades.</p>
+                        <p>Contamos con la capacidad para adaptarnos rápidamente a las tendencias emergentes del mercado
+                            digital y ajustar las estrategias para aprovechar nuevas oportunidades.</p>
                         <h4>ATENCIÓN PERSONALIZADA</h4>
-                        <p>Nuestro enfoque en brindar un servicio al cliente excepcional, asegurando que cada proyecto sea tratado con la dedicación y personalización que merece.</p>
+                        <p>Nuestro enfoque en brindar un servicio al cliente excepcional, asegurando que cada proyecto
+                            sea tratado con la dedicación y personalización que merece.</p>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -92,10 +128,21 @@
                             <h1><i class="fa-solid fa-star-of-life"></i> CONTACTANOS</h1>
                         </div>
                         <ul>
-                            <li><p><a href="mailto:hola@camaleonstudio.com"><i class="fa-solid fa-envelope"></i> hola@camaleonstudio.com</a></p></li>
-                            <li><p><a href="https://api.whatsapp.com/send?phone=523310099162&text=Gracias%20por%20contactarme%2C%20me%20gustaria%20pedir%20informacion%20del%20plan%20inicial."><i class="fa-brands fa-whatsapp"></i> +52 33 1009 9162</a></p></li>
-                            <li><p><a href="#"><i class="fa-brands fa-facebook"></i> Camaleon Studio</a></p></li>
-                            <li><p><a href="#"><i class="fa-brands fa-instagram"></i> Camaleon Studio</a></p></li>
+                            <li>
+                                <p><a href="mailto:hola@camaleonstudio.com"><i class="fa-solid fa-envelope"></i>
+                                        hola@camaleonstudio.com</a></p>
+                            </li>
+                            <li>
+                                <p><a
+                                        href="https://api.whatsapp.com/send?phone=523310099162&text=Gracias%20por%20contactarme%2C%20me%20gustaria%20pedir%20informacion%20del%20plan%20inicial."><i
+                                            class="fa-brands fa-whatsapp"></i> +52 33 1009 9162</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><i class="fa-brands fa-facebook"></i> Camaleon Studio</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><i class="fa-brands fa-instagram"></i> Camaleon Studio</a></p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -105,4 +152,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
